@@ -6,11 +6,14 @@ all:: build
 run:: $(addprefix run-, $(versions))
 
 clean::
-	@rm -r obj/
-	@rm -r bin/
+	@rm -rf obj/
+	@rm -rf bin/
+	@rm -rf template/obj/
+	@rm -rf template/bin/
+	@rm test.zip
 
 zip::
-	zip -r test.zip Makefile ManualTest.sh bin/
+	@zip -r test.zip Makefile ManualTest.sh bin/
 
 obj/mac_%:
 	@mkdir -p obj/mac_$*
