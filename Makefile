@@ -1,6 +1,9 @@
 versions = mac_10.7 mac_10.8 mac_10.9 mac_10.10 mac_10.11 mac_10.12
 
-all:: $(addprefix obj/, $(versions)) $(addprefix bin/, $(versions))
+build:: $(addprefix obj/, $(versions)) $(addprefix bin/, $(versions))
+all:: build
+
+run:: $(addprefix run-, $(versions))
 
 clean::
 	@rm -r obj/
@@ -18,3 +21,7 @@ bin/mac_%: obj/mac_%/
 	@mkdir -p bin/mac_$*/
 	@cp -R obj/mac_$*/bin/Debug/XMRegressionTest.app bin/mac_$*/XMRegressionTest-Debug.app
 	@cp -R obj/mac_$*/bin/Release/XMRegressionTest.app bin/mac_$*/XMRegressionTest-Release.app
+
+run-mac_%:
+	bin/mac_$*/XMRegressionTest-Debug.app/Contents/MacOS/XMRegressionTest
+	bin/mac_$*/XMRegressionTest-Release.app/Contents/MacOS/XMRegressionTest
