@@ -9,6 +9,9 @@ clean::
 	@rm -r obj/
 	@rm -r bin/
 
+zip::
+	zip test.zip Makefile bin/
+
 obj/mac_%:
 	@mkdir -p obj/mac_$*
 	@cp template/* obj/mac_$*/
