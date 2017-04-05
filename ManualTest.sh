@@ -1,0 +1,12 @@
+bin/mac_10.7/XMRegressionTest-Debug.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.7/XMRegressionTest-Release.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.8/XMRegressionTest-Debug.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.8/XMRegressionTest-Release.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.9/XMRegressionTest-Debug.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.9/XMRegressionTest-Release.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.10/XMRegressionTest-Debug.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.10/XMRegressionTest-Release.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.11/XMRegressionTest-Debug.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.11/XMRegressionTest-Release.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.12/XMRegressionTest-Debug.app/Contents/MacOS/XMRegressionTest
+bin/mac_10.12/XMRegressionTest-Release.app/Contents/MacOS/XMRegressionTest

@@ -10,7 +10,7 @@ clean::
 	@rm -r bin/
 
 zip::
-	zip test.zip Makefile bin/
+	zip -r test.zip Makefile ManualTest.sh bin/
 
 obj/mac_%:
 	@mkdir -p obj/mac_$*
